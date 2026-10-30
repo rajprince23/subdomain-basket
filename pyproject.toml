@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subdomain-basket"
+version = "0.1.0"
+description = "Authorization-only passive domain reconnaissance MVP"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+subdomain-basket = "subdomain_basket.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["subdomain_basket*"]
